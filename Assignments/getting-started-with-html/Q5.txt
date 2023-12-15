@@ -1,0 +1,6 @@
+Q5. What is the DOCTYPE Declaration in HTML?
+
+Answer: The "Document Type Declaration," or <!DOCTYPE >, is a crucial element that appears at the start of an HTML document.
+        It helps guarantee that the page is displayed correctly by informing the web browser or HTML parser the version of HTML
+        the document is written in. It usually comes at the start of the HTML document and is not surrounded by angle brackets 
+        like other HTML tags.

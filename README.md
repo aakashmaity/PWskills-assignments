@@ -1,2 +1,2 @@
 # PWskills-assignments
-Repository for submission of assignments on PW
+Repository for submission of projects and assignments on PW

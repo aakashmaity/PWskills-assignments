@@ -1,0 +1,13 @@
+Q4. C Write a short note on Tag and element with an example.
+
+Answer: Tags: They're the building blocks of HTML, written in angle brackets (<>). They define the start and end of an element, 
+        giving it structure and meaning. Think of them as instructions for the browser.
+        Tags are basicaly two types opening and ending.
+
+        Elements: They're the actual content created by tags, like paragraphs, headings, or images. They hold the information 
+        displayed on the page. Imagine elements as the assembled bricks forming the structure.
+
+        example:
+        <p>this is paragraph</p>
+        So, we can say that "p" without content(children) is just tag.
+        The combination of Opening tag and Ending tag with content is called Element.
