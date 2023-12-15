@@ -10,11 +10,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Resume</title>
 </head>
-<body class="flex justify-center m-0 box-border">
-    <section class="relative flex flex-col w-[1000px] drop-shadow-lg">
+<body class="flex justify-center items-center m-0 box-content">
+    <section class="relative flex flex-col w-[1000px] drop-shadow-lg ">
+
+        <!-- top -->
         <div class="flex flex-row absolute top-20 bg-blue-900 z-10 w-[1000px] h-36">
             <div class="absolute left-28">
-                <img src="./Assets/profile.jpg" class="rounded-full w-44 border-2 border-l-sky-600" alt="profile-pic" srcset="" >
+                <img src="./Assets/profile.jpg" class="rounded-full w-44 border-0 border-l-sky-600" alt="profile-pic" srcset="" >
             </div>
             <div class="m-auto p-4 px-5">
                 <h1 class="font-[poppin] text-5xl tracking-wider text-gray-300 font-bold">AKASH</h1>
@@ -24,14 +26,17 @@
         </div>
     
         <!-- Bottom -->
-        <main class="grid grid-cols-2 relative gap-7 ml-10 bg-cyan-200 pb-5 drop-shadow-2xl">
+        <main class="grid grid-cols-2 relative gap-7 ml-10 bg-cyan-200 pb-5 drop-shadow-2xl box-content">
+
             <!-- left section -->
             <section class="text-sm bg-slate-900 text-slate-100 pt-72 px-6">
     
                 <!-- about me -->
-                <div class="text-center">
-                    <span class="text-gray-300 tracking-widest text-lg font-bold rounded-full py-1 border-2 border-sky-500 px-10">About me</span>
-                    <p class="py-5 pl-2 text-center">I am a computer science engineering Undergraduate with coding knowledge in different programming languages.
+                <div class="my-1 text-center">
+                    <h1 class="inline text-gray-300 tracking-widest text-lg font-bold rounded-full py-1 border-2 border-sky-500 px-10">ABOUT ME</h1>
+                </div>
+                <div class="py-3">
+                    <p class="px-3">I am a computer science engineering Undergraduate with coding knowledge in different programming languages.
                        To be a part of an enthusiastic work environment , where I can
                         enhance my knowledge and apply my technical skills to accomplish organizational goal .
                     </p>
@@ -39,7 +44,7 @@
     
                 
                 <!-- contact -->
-                <div class="py-5 pl-3">
+                <div class="py-3 px-3">
                     <ul class="flex flex-col gap-3"> <!-- Added flex and flex-col classes -->
                         <li class="flex items-center"> 
                             <img src="./Assets/phone.svg" alt="phone" srcset="">
@@ -61,16 +66,18 @@
                 </div>
 
                 <!-- skills -->
-                <div class="py-5">
-                    <span class="tracking-widest text-lg font-bold rounded-full ml-32 py-1 border-2 border-sky-500 px-10">SKILLS</span>
-                    <ul class="pt-5 pl-3">
+                <div class="py-6 text-center">
+                    <h1 class="inline tracking-widest text-lg font-bold rounded-full py-1 border-2 border-sky-500 px-10">SKILLS</h1>
+                </div>
+                <div class="mx-2">
+                    <ul class="pl-3">
                         <li class="font-bold">Technical Skills</li>
                             <ul class="pl-14 py-2 list-disc">
                                 <li>Languages</li>
                                 <ul class="py-2">
                                     <li>C/C++ (Advance)</li>
-                                    <li>HTML(Advance)</li>
-                                    <li>Javascriptr(Intermediate)</li>
+                                    <li>HTML (Advance)</li>
+                                    <li>Javascript (Intermediate)</li>
                                 </ul>
                                 <li>Frameworks</li>
                                 <ul class="py-2">
@@ -101,11 +108,13 @@
     
     
             <!-- right section -->
-            <section class="bg-gray-100 text-gray-800 pt-72 px-6">
+            <section class="bg-gray-100 text-gray-800 pt-72 px-6 box-content">
     
                 <!-- education -->
-                <div  class="text-sm">
-                    <span class="tracking-widest text-lg font-bold rounded-full py-1 bg-blue-900 text-gray-100 px-10">EDUCATION</span>
+                <div class="text-center">
+                    <h1 class="inline tracking-widest text-lg font-bold rounded-full py-1 bg-blue-900 text-gray-100 px-10">EDUCATION</h1>
+                </div>
+                <div  class="py-3 text-sm">
                     <ul  class="my-3">
                         <li class="tracking-wider font-semibold py-1">Heritage Institute Of Technology</li>
                             <ul class="italic">
@@ -128,8 +137,10 @@
                 </div>
     
                 <!-- projects -->
-                <div class="pt-8 text-sm gap-1">
-                    <span class="tracking-widest text-lg font-bold rounded-full py-1 bg-blue-900 text-gray-100 px-10">PROJECTS</span>
+                <div class="text-center">
+                    <h1 class="inline tracking-widest text-lg font-bold rounded-full py-1 bg-blue-900 text-gray-100 px-10">PROJECTS</h1>
+                </div>
+                <div class="py-3 text-sm">
                     <ul class="my-3">
                         <li class="tracking-wider text-sm font-semibold">SecuResult - A web app that store your result securely</li>
                             <ul class="italic">
@@ -143,7 +154,7 @@
                                     <li>Once an idiot said “why to show marks publicly” we felt it</li>
                                     <li>Leveraging the power of encryption and decentralized storage a deadly
                                         combination securing result and storing for forever for you</li>
-                                    <li>Also used Blockchain technology.</li>
+                                    <li>Implement Blockchain technology.</li>
                                 </ul>
                             </div>
                         <li class="tracking-wider text-sm font-semibold py-2">Currency exchange rate website</li>
@@ -162,9 +173,11 @@
 
 
                 <!-- CERTIFICATIONS -->
-                <div class="pt-3 pb-10 ">
-                    <span class="tracking-widest text-lg font-bold rounded-full py-1 bg-blue-900 text-gray-100 px-10">CERTIFICATIONS</span>
-                    <ul class="pl-14 py-3 list-disc">
+                <div class="text-center">
+                    <h1 class="inline tracking-widest text-lg font-bold rounded-full py-1 bg-blue-900 text-gray-100 px-10">CERTIFICATIONS</h1>
+                </div>
+                <div class="py-3">
+                    <ul class="px-5 py-3 list-disc">
                         <li><a href="https://www.hackerrank.com/certificates/9aededbc471e" target="_blank">Problem Solving Basic - Hackerrank</a></li>
                     </ul>
                 </div>
