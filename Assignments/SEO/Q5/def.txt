@@ -1,0 +1,6 @@
+Fabicon : A favicon (short for "favorite icon") is a small, typically square or
+rectangular image that is associated with a website or web page. It is displayed
+in various places within web browsers to help users identify and recognize a
+specific website, especially when they have multiple tabs or bookmarks open.
+Favicon images are usually 16x16 pixels or 32x32 pixels in size and are saved in
+ICO (icon) format.
