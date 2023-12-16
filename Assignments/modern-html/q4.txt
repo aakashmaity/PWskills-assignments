@@ -1,0 +1,19 @@
+Q4. List any 3 ways which helps us in improving the accessibility of html.
+
+Answer: 
+        1. Semantic HTML: Use semantic HTML elements to convey the structure and meaning of content. 
+        Semantic elements like <header>, <nav>, <main>, <article>, <section>, <aside>, and <footer> provide 
+        additional context to assistive technologies and make it easier for users with disabilities to 
+        navigate and understand the content. For example, using <button> for interactive elements instead of <div>
+        with JavaScript click handlers improves accessibility.
+
+        2. Proper Use of Headings and Landmarks: Organize content with proper heading structure (<h1> to <h6>), 
+        ensuring a logical hierarchy. Screen readers use heading levels to create an outline, aiding users in 
+        navigating the page. Additionally, landmarks such as <nav>, <main>, and <footer> provide users with shortcuts 
+        to essential sections. Ensuring that these landmarks are appropriately used helps improve the overall 
+        accessibility of the document.
+        
+        3. Accessible Forms: Create accessible forms by providing clear and descriptive labels for form controls. 
+        Use the <label> element to associate labels with their respective form fields, aiding users with screen 
+        readers. Additionally, utilize proper input types and attributes (such as alt for images) to enhance the user experience.
+        

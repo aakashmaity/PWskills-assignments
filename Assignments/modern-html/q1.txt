@@ -1,0 +1,16 @@
+Q1. List out the features of HTML5 .
+
+Answer: Below is the list of some of the key features and enhancements introduced in HTML5:
+        1: Audio and Video Support: <audio> and <video> elements for native playback. Support for 
+        various audio and video formats. The autoplay and controls attributes for customization.
+        
+        2: Canvas: The <canvas> element for dynamic graphics rendering. JavaScript APIs for drawing and animations.
+        3: Geolocation: The Geolocation API to access a user's location. Enables location-based web applications.
+        4: Local Storage: The localStorage and sessionStorage APIs. Allows data storage on the client-side for offline functionality.
+        5: Web Storage: Replaces traditional cookies for client-side data storage. Supports larger data storage and improved security.
+                        
+        6: Web Workers: Allows background processing without blocking the main thread. Enhances web application performance and responsiveness.
+        7: WebSockets: Enables real-time, full-duplex communication between the client and server. Useful for chat applications and real-time updates.
+        8: Drag and Drop: Native support for drag-and-drop functionality. Simplifies user interactions with web applications.
+        9: Forms: New input types (e.g., <input type="date" />, <input type="email" />). Form validation with the required attribute. Enhanced support for form elements.
+        10: SVG and MathML: Native support for Scalable Vector Graphics (SVG). Native support for Mathematical Markup Language (MathML). 
