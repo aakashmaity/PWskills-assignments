@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+        }
+        .gallery {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+    
+        .gallery figure {
+          margin: 10px;
+          text-align: center;
+        }
+    
+        .gallery img {
+          max-width: 100%;
+          height: auto;
+        }
+    
+        .gallery figcaption {
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+      <figure>
+        <img
+          src="https://unsplash.com/photos/WhOaFGKikc8/download?ixid=M3wxMjA3fDB8MXx0b3BpY3x8NnNNVmpUTFNrZVF8fHx8fDJ8fDE2OTUyOTAxODZ8&force=true&w=250"
+          alt="Image 1"
+        />
+        <!-- <figcaption>Squirrel</figcaption> -->
+      </figure>
+
+      <figure>
+        <img
+          src="https://unsplash.com/photos/npOs4XaRX8A/download?ixid=M3wxMjA3fDB8MXx0b3BpY3x8NnNNVmpUTFNrZVF8fHx8fDJ8fDE2OTUyOTAxODZ8&force=true&w=380"
+          alt="Image 2"
+        />
+        <!-- <figcaption>Beautiful Sea side view</figcaption> -->
+      </figure>
+
+      <figure>
+        <img
+          src="https://unsplash.com/photos/wi24-KhjmjU/download?ixid=M3wxMjA3fDB8MXx0b3BpY3x8NnNNVmpUTFNrZVF8fHx8fDJ8fDE2OTUyOTAxODZ8&force=true&w=640"
+          alt="Image 3"
+        />
+        <!-- <figcaption>Nature at its best</figcaption> -->
+      </figure>
+    </div>
+</body>
+</html>
