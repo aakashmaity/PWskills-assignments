@@ -1,0 +1,48 @@
+Q2. Explain the role of the following key properties in the Flexbox layout model
+    1. justify content
+    2. align-items
+    3. gap
+    4. flex-direction
+    5. flex-wrap 
+
+Answer: 
+        1. justify-content: justify-content is used to control the alignment of flex items
+        along the main (row or column) axis of the flex container. Values include:
+        flex-start (default), flex-end, center, space-between, and space-around.
+        flex-start aligns items at the start of the main axis. flex-end aligns items at
+        the end of the main axis. center centers items along the main axis.
+        space-between evenly distributes items with no space before the first item or
+        after the last item. space-around evenly distributes items with space before the
+        first and after the last items.
+
+        2. align-items: align-items controls the alignment of flex items along the cross
+        (opposite) axis of the flex container. Values include: stretch (default),
+        flex-start, flex-end, center, and baseline. stretch makes items fill the entire
+        cross-axis height, equalizing their heights. flex-start aligns items at the
+        start of the cross axis. flex-end aligns items at the end of the cross axis.
+        center centers items along the cross axis. baseline aligns items such that their
+        baselines align, which is useful for aligning text or inline elements.
+
+        
+        3. gap: The gap property (and its equivalents, row-gap and column-gap) is used to
+        control the spacing between flex items within the flex container. It specifies
+        the space between items in both the main and cross axes. It is especially useful
+        for creating consistent gutters and margins between flex items without the need
+        for extra margins or padding on individual items.
+        
+
+        4. flex-direction: flex-direction determines the direction in which flex items
+        are placed within the flex container. Values include: row (default),
+        row-reverse, column, and column-reverse. row arranges items in rows from the
+        start of the main axis to the end. row-reverse arranges items in rows from the
+        end to the start. column arranges items in columns from the start of the main
+        axis to the end. column-reverse arranges items in columns from the end to the
+        start.
+
+        
+        5. flex-wrap: flex-wrap controls whether flex items are allowed to wrap onto
+        multiple lines when they don't fit within the flex container's available space.
+        Values include: nowrap (default), wrap, and wrap-reverse. nowrap prevents items
+        from wrapping to a new line, causing overflow if they don't fit. wrap allows
+        items to wrap to a new line when necessary. wrap-reverse wraps items in the
+        reverse order

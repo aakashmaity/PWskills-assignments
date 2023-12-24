@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>RedBus</title>
+  </head>
+  <body class="relative font-montserrat">
+    <header class="sticky bg-white z-100">
+
+<!-- navbar -->
+      <nav class="flex justify-between space-x-16 items-center mx-auto max-w-[1200px] h-[120px]">
+        <!-- left -->
+        <div class="flex items-center space-x-16 text-lg font-semibold">
+            <div class="h-15 w-28 object-contain">
+                <img class="" src="./images/redbusLogo.svg" alt="logo" class="src" />
+            </div>
+            <div class="h-6 border-l"></div>
+            <ul class="flex space-x-3 text-gray-700">
+            <li>
+                <a class="flex flex-col items-center gap-2 px-[10px] py-[14px] bg-[#d84e55] text-white  rounded-lg hover:bg-[#F0F0F0] hover:text-slate-900" href="#">
+                    <img src="./images/rb_vertical.svg"  alt="" class="src" />
+                    <span class="font-medium opacity-90">Bus Tickets</span>
+                </a>
+            </li>
+            <li>
+                <a class="flex flex-col items-center gap-2 px-[10px] py-[14px]  rounded-lg hover:bg-[#d9d7d7]" href="#">
+                    <img src="./images/ryde_vertical.svg" alt="" class="src" />
+                    <span class="font-medium opacity-90">Car Rental</span>
+                </a>
+            </li>
+            <li>
+                <a class="flex flex-col items-center gap-2 px-[10px] py-[14px]  rounded-lg hover:bg-[#d9d7d7]" href="#">
+                    <img src="./images/rail_vertical.svg" alt="" class="src" />
+                    <span class="font-medium opacity-90">Train Tickets</span>
+                </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- right -->
+        <div>
+            <ul class="flex items-center space-x-5 gap-2 text-gray-700">
+                <li>
+                    <a class="flex gap-2 px-2 py-[6px]  hover:rounded-lg hover:bg-[#F0F0F0] transition duration-300 ease-out" href="#">
+                        <img src="./images/headset.png" width="26px" alt="" />
+                        <span class="font-medium opacity-90 text-lg">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex gap-2 px-2 py-[6px]  hover:rounded-lg hover:bg-[#F0F0F0] transition duration-300 ease-out" href="#">
+                        <img src="./images/user.svg" width="28px" alt="" class="src" />
+                        <div class="flex items-center gap-2">
+                            <span class="font-medium opacity-90 text-lg">Account</span>
+                            <img class="h-3 w-3 object-contain" src="./images/down.svg" alt=""/>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    
+<!-- hero -->
+    <section class="">
+        <div id="hero" style="background-image: url('./images/HeroImage.png');" class="relative flex flex-col items-center h-[520px] bg-no-repeat bg-cover w-full ">
+            <h1 class="text-[32px] font-bold mt-16 text-white my-16">India's No. 1 Online Bus Ticket Booking Site </h1>
+
+            <!-- search box -->
+            <div class="flex items-center rounded-[30px] overflow-hidden" >
+
+                <!-- from box -->
+                <div class="flex h-28 w-[215px] border-r px-6 bg-white items-center gap-3 ">
+                    <img src="./images/bus.svg" alt="" class="h-6 w-6 object-contain opacity-40">
+                    <input class="placeholder: text-md font-medium outline-none" type="text" placeholder="FROM">
+                </div>
+
+                <!-- to box -->
+                <div class="flex h-28 w-[215px] border-r px-6 bg-white items-center  gap-3">
+                    <img src="./images/bus.svg" alt="" class="h-6 w-6 object-contain opacity-40">
+                    <input class="placeholder: text-md font-medium outline-none" type="text" placeholder="TO">
+                </div>
+
+                <!-- date box -->
+                <div class="flex h-28 w-[215px] border-r px-6 bg-white items-center gap-3">
+                    <img src="./images/date.svg" alt="" class="h-6 w-6 object-contain opacity-40">
+                    <input class="placeholder: text-md font-medium outline-none" type="date" placeholder="DATE">
+                </div>
+
+                <!-- search box -->
+                <div class="p-[40px] bg-[#d84e55] w-[240px] h-28 text-xl font-bold text-white cursor-pointer">
+                    <buttom>SEARCH BUSES</buttom>
+                </div>
+            </div>
+
+            <!-- trending offers -->
+            <div class="absolute -bottom-60 h-[312px] w-[1200px] bg-white rounded-[30px] shadow-lg px-8 pt-2 pb-16 ">
+                <div class="flex justify-between px-10 py-6">
+                    <h1 class="tracking-wider text-4xl font-light">TRENDING OFFERS</h1>
+                    <a href="#"><span class="text-xl text-blue-600 bg-white bg-opacity-20 border-2 px-4 py-1 font-semibold rounded-full hover:shadow-lg">View all</span></a>
+                </div>
+                
+                <!-- carousel-->
+                <div class="flex gap-10 text-white pl-7">
+                    <!-- card 1 -->
+                    <div class="flex space-x-4 bg-gradient-to-r from-[#154499] to-[#4381ed] h-[194px] w-[315px] px-8 py-4 rounded-2xl cursor-pointer">
+                        <div class="">
+                            <img  class="h-[70px] w-[100px] rounded-full mt-5 object-cover" src="./images/cardImg3.png" alt="" class="src">
+                        </div>
+                        <div class="flex flex-col gap-2 pl-2">
+                            <span class="text-[15px] bg-opacity-20 bg-white rounded-xl px-2 py-1 w-fit">BUS</span>
+                            <h1 class="text-lg font-bold">Save up to Rs 250 on bus tickets</h1>
+                            <p class="text-sm font-light p-0">Valid till 30 Nov</p>
+                            <div class="flex w-fit gap-2">
+                                <span class="font-bold border border-dashed px-3 py-1 bg-white bg-opacity-20 rounded-lg">FIRST</span>
+                                <img src="./images/copy.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="flex space-x-4 bg-gradient-to-r from-[#05563e] to-[#0a9277] h-[194px] w-[315px] px-8 py-4 rounded-2xl cursor-pointer">
+                        <div class="">
+                            <img  class="h-[70px] w-[100px] rounded-full mt-5 object-cover" src="./images/cardImg3.png" alt="" class="src">
+                        </div>
+                        <div class="flex flex-col gap-2 pl-2">
+                            <span class="text-[15px] bg-opacity-20 bg-white rounded-xl px-2 py-1 w-fit">BUS</span>
+                            <h1 class="text-lg font-bold">Get 10% upto off Rs 300 on HDFC Bank</h1>
+                            <p class="text-sm font-light p-0">Valid till 5 Dec</p>
+                            <div class="flex w-fit gap-2">
+                                <span class="font-bold border border-dashed px-3 py-1 bg-white bg-opacity-20 rounded-lg">HDFC300</span>
+                                <img src="./images/copy.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- card 3 -->
+                    <div class="flex space-x-4 bg-gradient-to-r from-[#920c0e] to-[#c81838] h-[194px] w-[315px] px-8 py-4 rounded-2xl cursor-pointer">
+                        <div class="">
+                            <img  class="h-[70px] w-[100px] rounded-full mt-5 object-cover" src="./images/cardImg3.png" alt="" class="src">
+                        </div>
+                        <div class="flex flex-col gap-2 pl-2">
+                            <span class="text-[15px] bg-opacity-20 bg-white rounded-xl px-2 py-1 w-fit">BUS</span>
+                            <h1 class="text-lg font-bold">Save up to Rs 300 on AP, TS routes</h1>
+                            <p class="text-sm font-light p-0">Valid till 21 Nov</p>
+                            <div class="flex w-fit gap-2">
+                                <span class="font-bold border border-dashed px-3 py-1 bg-white bg-opacity-20 rounded-lg">SUPERHIT</span>
+                                <img src="./images/copy.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- small banner -->
+    <div class="relative w-[1500px] mx-auto mt-72 mb-16 rounded-xl overflow-hidden">
+        <img class="" src="./images/smallBanner1.png" class="rounded-xl object-fill" alt="">
+        <img class="absolute right-1 top-0 w-28" src="./images/sponsered.png" alt="">
+    </div>
+
+
+    <!-- main div -->
+    <main class="flex flex-col items-center justify-center w-[1280px] mx-auto">
+        
+        <!-- features -->
+        <section class="flex w-full pt-[90px]">
+            <!-- left -->
+            <div>
+                <h1 class="w-[552px] text-[40px]">NOW, <span class="font-bold">GET MORE THAN JUST BUS </span>TICKETS WITH REDBUS!</h1>
+                
+                <!-- sub menu -->
+                <div class="flex items-center space-x-4 my-8 border-b">
+                    <div class="flex relative items-center border-opacity-70 border-b-red-700 space-x-3 px-4 py-[14px] rounded-lg after:h-[3px] after:w-full after:bg-[#d84e55] after:absolute after:-bottom-[1px]">
+                        <img src="./images/ryde.svg" alt="">
+                        <span class="text-xl text-[#d84e55] font-bold">Cab/Bus Rental</span>
+                    </div>
+                    <div class="h-[25px] border-l"></div>
+                    <div class="flex gap-4">
+                        <img src="./images/rail_vertical.svg" alt="" >
+                        <span class="text-xl font-bold">Train Tickets</span>
+                    </div>
+                </div> 
+
+                <!-- feature lists -->
+                <p class="text-lg text-slate-800">Rent Cabs, Tempo Travellers & Buses with best drivers</p>
+                <ul class="flex flex-col space-y-4">
+                    <li class="flex gap-[21px] items-center mt-10">
+                        <img src="./images/feature1.svg" width="80px" alt="">
+                        <span class="text-xl font-bold content-start">Outstation</span>
+                    </li>
+                    <li class="flex gap-[21px] items-center mt-10">
+                        <img src="./images/feature2.svg" alt="">
+                        <span class="text-xl font-bold">Hourly Rental</span>
+                    </li>
+                    <li class="flex gap-[21px] items-center mt-10">
+                        <img src="./images/feature3.svg" alt="">
+                        <span class="text-xl font-bold content-start">Airport Transfers</span>
+                    </li>
+                </ul>
+                <button class="flex items-center space-x-3 bg-[#d84e55] px-4 py-[14px] font-bold text-white rounded-2xl mt-[59px]">
+                    <span> Book Cab/Bus Rental</span>
+                    <img src="./images/arrow_right.svg" width="24" height="24" alt="">
+                </button>
+            </div>
+            
+            <!-- right -->
+            <div class="relative h-[628px] w-full bg-cover bg-no-repeat rounded-[50px] overflow-visible" style="background-image: url(./images/featureImgBG.svg);">
+                <div class="absolute bottom-20 right-40 w-[670px] h-[401px] bg-cover bg-no-repeat bg-center "
+                    style="background-image: url(./images/featureImg.svg)"></div>
+            </div>
+        </section>
+
+        <!-- install app -->
+        <section class="w-full h-[450px] bg-right p-8 bg-no-repeat bg-cover rounded-[50px] mt-[180px]" style="background-image: url(./images/appInstallbg.svg);">
+
+            <h1 class="w-[552px] text-[40px] text-white font-light">ENJOY THE APP!</h1>
+
+            <div class="flex space-x-20 items-center">
+                <!--app features and ratings  -->
+                <div class="px-8 py-12 bg-white w-[400px] mt-9  rounded-2xl">
+                    
+                    <!-- features -->
+                    <ul class="flex flex-col space-y-5">
+                        <li class="flex items-center space-x-3">
+                            <img src="./images/tick.svg" alt="">
+                            <span>Quick access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <img src="./images/tick.svg" alt="">
+                            <span>Superior live tracking</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- ratings -->
+                    <div class="flex items-center space-x-9 mt-9">
+                        <div class="flex flex-col space-y-1">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xl font-bold">4.5</span>
+                                <img class="h-[15px] w-[15px] object-cover" src="./images/star.svg" width="20px" alt="">
+                            </div>
+                            <span class="text-sm text-slate-700 font-light">50M+ downloads</span>
+                            <span class="text-sm font-bold">Play Store</span>
+                        </div>
+                        <div class="h-[74px] w-[4px] border-l-2 "></div>
+                        <div class="flex flex-col space-y-1">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xl font-bold">4.6</span>
+                                <img class="h-[15px] w-[15px] object-cover" src="./images/star.svg" width="20px" alt="">
+                            </div>
+                            <span class="text-sm text-slate-700 font-light">50M+ downloads</span>
+                            <span class="text-sm font-bold">App Store</span>
+                        </div>      
+                    </div>   
+                </div>
+
+                <!-- qr -->
+                <div class="flex flex-col space-y-3">
+                    <span class="text-white font-bold text-xl">Scan to <br> download</span>
+                    <img class="h-[106px] w-[106px]" src="./images/qrCode.svg" alt="">
+                </div>
+
+                <!-- download app -->
+                <div class="flex flex-col space-y-3">
+                    <span class="text-white font-bold text-xl">Download the<br> App on</span>
+                    <img class="h-[47px] w-[147px]" src="./images/playStore.svg" alt="">
+                    <img class="h-[47px] w-[147px]" src="./images/appStore.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- primo top banner-->
+        <div class="mt-[180px] w-fit mx-auto">
+            <img src="./images/primoTopBanner.svg" alt="">
+        </div>
+
+
+        <!-- features 2 (after primo) -->
+        <div class="flex text-white justify-between space-x-10 mt-[52px] w-full">
+            <div class="flex space-x-6 w-[360px] bg-gradient-to-t from-[#274898] to-[#7D4686] px-6 py-4 rounded-3xl h-fit">
+                <img src="./images/primoSubImg1.svg" alt="">
+                <div>
+                    <h3 class="text-2xl font-bold pb-5">1 of 5 buses qualify</h3>
+                    <p>Primo's strict safety qualification ensures a safer travel for you</p>
+                </div>
+            </div>
+            <div class="flex space-x-6 w-[360px] bg-gradient-to-t from-[#274898] to-[#7D4686] px-6 py-4 rounded-3xl h-fit">
+                <img src="./images/primoSubImg1.svg" alt="">
+                <div>
+                    <h3 class="text-2xl font-bold pb-5">Preferred by 90%</h3>
+                    <p>90% of travellers re-book Primo buses for its punctuality and comfort</p>
+                </div>
+            </div>
+            <div class="flex space-x-6 w-[360px] bg-gradient-to-t from-[#274898] to-[#7D4686] px-6 py-4 rounded-3xl h-fit">
+                <img src="./images/primoSubImg1.svg" alt="">
+                <div>
+                    <h3 class="text-2xl font-bold pb-5">9 Lac+ monthly travellers</h3>
+                    <p>In 2022, 9 Lac+ people traveled with Primo every month</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- partnered with -->
+        <div class="mt-[180px] mx-auto space-y-6 w-full">
+            <h1 class="tracking-wide w-[552px] text-[50px] py-6 font-light">PARTNERED WITH</h1>
+            <div class="flex justify-between py-6">
+                <h1 class="text-2xl">25 RTCS</h1>
+                <a href="#"><span class="text-xl bg-white bg-opacity-20 border-2 px-4 py-1 rounded-full hover:shadow-lg">View all</span></a>
+            </div>
+            <div class="flex justify-between space-x-8">
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner1.png" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">APSRTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner2.svg" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">GSRTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner3.png" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">TSRTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner4.png" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">MSRTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner5.svg" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Kerala RTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner6.png" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">SBRTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner7.svg" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">RSRTC</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./images/partner8.svg" width="100" height="101" alt="">
+                    <span class="px-8 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">UPRTC</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bus operators -->
+        <div class="flex flex-col mt-[52px] w-full">
+            <!-- header -->
+            <div class="flex justify-between py-6">
+                <h1 class="text-3xl">3500+ PRIVATE BUS OPERATORS</h1>
+                <a href="#"><span class="text-xl bg-white bg-opacity-20 border-2 px-4 py-1 rounded-full hover:shadow-lg">View all</span></a>
+            </div>
+
+            <!-- OPERATORS LIST -->
+            <div class="flex justify-around text-xl font-light mt-9 space-x-20">
+                <div class="flex flex-col space-y-6">
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">SRS Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Parveen Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">SRM Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Eagle Travels</span>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Evacay Bus</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Rajdhani Express</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Infant Jesus</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Kanker Roadways</span>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Kallada Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">VRL Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Patel Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full hover:bg-[#F0F0F0] transition duration-300 ease-out ">Komitla</span>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">KPN Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">Chartered Speed...</span>
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">JBT Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">Shree Krishna Travels</span>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">Orange Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">Bengal Tiger</span>
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">Shatabdi Travels</span>
+                    <span class="px-3 py-2 w-fit rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">Humsafer Travels</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- global presence -->
+        <div class="mt-[122px] w-full">
+            <h1 class="text-[40px] text-black uppercase font-light">global presence</h1>
+
+            <!-- nations -->
+            <div class="flex justify-between mt-16">
+                <div class="flex flex-col items-center w-fit">
+                    <img src="./images/Colombia.svg" width="138" height="138" alt="nation">
+                    <h1
+                        class="text-[22px] px-8 py-2 w-fit font-semibold rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">
+                        Colombia</h1>
+                </div>
+                <div class="flex flex-col items-center w-fit">
+                    <img src="./images/india.svg" width="138" height="138" alt="nation">
+                    <h1
+                        class="text-[22px] px-8 py-2 w-fit font-semibold rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">
+                        India</h1>
+                </div>
+                <div class="flex flex-col items-center w-fit">
+                    <img src="./images/Indonesia.svg" width="138" height="138" alt="nation">
+                    <h1
+                        class="text-[22px] px-8 py-2 w-fit font-semibold rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">
+                        Indonesia</h1>
+                </div>
+                <div class="flex flex-col items-center w-fit">
+                    <img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Malaysia.svg" width="138" height="138" alt="nation">
+                    <h1
+                        class="text-[22px] px-8 py-2 w-fit font-semibold rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">
+                        Malaysia</h1>
+                </div>                
+                <div class="flex flex-col items-center w-fit">
+                    <img src="./images/peru.svg" width="138" height="138" alt="nation">
+                    <h1
+                        class="text-[22px] px-8 py-2 w-fit font-semibold rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">
+                        Peru</h1>
+                </div>
+                <div class="flex flex-col items-center w-fit">
+                    <img src="./images/Singapore.svg" width="138" height="138" alt="nation">
+                    <h1
+                        class="text-[22px] px-8 py-2 w-fit font-semibold rounded-full bg-white hover:bg-[#F0F0F0] transition duration-300 ease-out ">
+                        Singapore</h1>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- FAQ -->
+        <div class="mt-[180px] w-full">
+            <h1 class="tracking-wide font-light text-[40px] py-6 w-full">FREQUENTLY ASKED QUESTONS</h1>
+
+            <!-- faq submenu  -->
+            <ul class="mt-10 flex space-x-8 mb-8">
+                <li
+                    class="text-[20px] font-light cursor-pointer relative w-fit px-2 text-[#D84E55] py-3 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-[#D84E55] ">
+                    General
+                </li>
+                <li
+                    class="text-[20px] font-light cursor-pointer relative w-fit px-2 font-lg py-3 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-[#D1D1D1] after:hidden  ">
+                    Ticket-related
+                </li>
+                <li
+                    class="text-[20px] font-light cursor-pointerrelative w-fit px-2 py-3 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-[#D1D1D1] after:hidden  ">
+                    Payment
+                </li>
+                <li
+                    class="text-[20px] font-light cursor-pointer relative w-fit px-2 py-3 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-[#D1D1D1] after:hidden  ">
+                    Cancellation & Refund
+                </li>
+                <li
+                    class="text-[20px] font-light cursor-pointer relative w-fit px-2 py-3 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-[#D1D1D1] after:hidden  ">
+                    Insurance
+                </li>
+            </ul>
+
+            <!-- FAQ questions -->
+            <div class="text-[16px] font-semibold">
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl">
+                    <span>Can I track the location of my booked bus
+                        online?</span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        What are the advantages of purchasing a bus ticket with redBus?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        Why book bus tickets online on redBus?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        Do I need to create an account on the redBus site to book my bus ticket?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        Does bus booking online cost me more?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        How can I get the discounts on the bus booking?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        What's New in Bus Booking on redBus?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+                <div class="flex justify-between px-6 py-7 w-full border h-[fit] rounded-2xl mt-10">
+                    <span>
+                        Can I book a Government bus ticket on redBus?
+                    </span>
+                    <img src="./images/plusIcon.svg" width="18" height="18" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer class="bg-[#f7f7f7] mt-8 font-light text-[16px] ">
+            <div class="py-10 border-b flex justify-between max-w-[1126px] mx-auto">
+                <div class="flex flex-col space-y-2">
+                    <img src="./images/redbusLogo.svg" width="86" height="57" alt="">
+                    <p class="w-[272px]">redBus is the world's largest online bus ticket booking
+                        service trusted by over 25 million happy customers globally. redBus offers bus ticket booking
+                        through its website, iOS and Android mobile apps for all major routes.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col space-y-2">
+                    <h1 class="text-lg font-bold">About redBus</h1>
+                    <ul class="flex flex-col space-y-2">
+                        <li class="capitalize">about us</li>
+                        <li class="capitalize">investor relation</li>
+                        <li>Contact us</li>
+                        <li>Mobile version</li>
+                        <li>redBus on mobile </li>
+                        <li>Sitemap </li>
+                        <li>Offers </li>
+                        <li>Careers </li>
+                        <li>Values </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <h1 class="text-lg font-bold">Info</h1>
+                    <ul class="flex flex-col space-y-2">
+                        <li class="capitalize">T&C</li>
+                        <li class="capitalize">Privacy Policy</li>
+                        <li>FAQ</li>
+                        <li>Blog</li>
+                        <li>Bus Operator Registration </li>
+                        <li>Agent Registration </li>
+                        <li>Insurance partner </li>
+                        <li>User agreement </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <h1 class="text-lg font-bold">Global Sites</h1>
+                    <ul class="flex flex-col space-y-2">
+                        <li>India</li>
+                        <li>Singapore</li>
+                        <li>Malaysia</li>
+                        <li>Indonesia</li>
+                        <li>Peru</li>
+                        <li>Colombia</li>
+                    </ul>
+                </div>
+
+
+                 <div class="flex flex-col space-y-2">
+                    <h1 class="text-lg font-bold">Our Partners</h1>
+                    <ul class="flex flex-col space-y-2">
+                        <li>Goibibo Bus</li>
+                        <li>Goibibo Hotels</li>
+                        <li>Makemytrip Bus</li>
+                        <li>Makemytrip Hotels</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="flex justify-between py-8 max-w-[1126px] mx-auto">
+                <span class= "text-sm" >Ⓒ 2023 Redbus India Pvt Ltd. All rights reserved</span>
+                <div class="flex space-x-6">
+                    <a href="#"><img src="./images/social_facebook_new.svg" width="24" height="25" alt="facebook"></a>
+                    <a href="#"><img src="./images/social_linkedin_new.svg" width="24" height="25" alt="linkedin"></a>
+                    <a href="#"><img src="./images/social_twitter_new.svg" width="24" height="25" alt="twitter"></a>
+                    <a href="#"><img src="./images/social_instagram_new.svg" width="24" height="25" alt="instagram"></a>
+                </div>
+            </div>
+    </footer>
+  </body>
+</html>
