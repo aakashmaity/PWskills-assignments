@@ -11,4 +11,4 @@ cd .\PWskills-assignments\redbus-clone\
 
 ### Use Live Server extension 
 ### or
-### Deploy to vercel : 
+### Deploy to vercel : https://p-wskills-assignments-redbus-clone.vercel.app/
