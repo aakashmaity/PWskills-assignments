@@ -5,7 +5,7 @@
 https://github.com/aakashmaity/PWskills-assignments.git
 
 
-# Go to the appropiate Directory
+# Go to this Directory
 cd .\PWskills-assignments\redbus-clone\
 
 
