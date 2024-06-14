@@ -1,0 +1,43 @@
+/* Base styles for the text block */
+.text {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Element for paragraph within the text block */
+.text__paragraph {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Modifier for primary paragraph */
+.text__paragraph--primary {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Modifier for secondary paragraph */
+.text__paragraph--secondary {
+    color: green;
+    font-style: italic;
+}
+
+/* Modifier for highlighted paragraph */
+.text__paragraph--highlighted {
+    background-color: yellow;
+    color: black;
+}
+
+/* Modifier for muted paragraph */
+.text__paragraph--muted {
+    color: grey;
+    font-size: 14px;
+}
+
+/* Element for note within the text block */
+.text__note {
+    font-size: 12px;
+    color: darkgrey;
+    display: block;
+    margin-top: 20px;
+}

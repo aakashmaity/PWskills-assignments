@@ -1,0 +1,18 @@
+/* External CSS targeting .box class */
+.box {
+    border: 2px solid black;
+    background-color: yellow; /* This will be overridden by internal CSS */
+}
+
+
+/*
+What happens when you target the same elements with inline, internal, and external CSS?
+
+Answer: 
+The CSS rules are applied based on their specificity and the order in which they are defined.
+
+Inline CSS: Inline CSS has the highest priority and will override both internal and external CSS.
+Internal CSS: Internal CSS has a higher priority than external CSS but lower than inline CSS.
+External CSS: External CSS has the lowest priority but is useful for maintaining a consistent style across multiple pages.
+
+*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form Example</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-section">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-section">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-section">
+                <label for="password">Password:</label>
+                <input type="password" name="password" class="password" placeholder="********"
+                id="password" required min=8 />
+            </div>
+            <div class="form-section">
+                <label for="age">Age:</label>
+                <input type="number" name="age" class="age" placeholder="38" id="age" required min=0
+                max=150 />   
+            </div>
+            <div class="form-section">
+                <label for="">Gender:</label>
+                <div class="radio-sec">
+                    <input type="radio" id="male" value="male" name="gender" checked />
+                    <label for="male" class="radioo">Male</label>
+                    <input type="radio" id="female" value="female" name="gender" />
+                    <label for="female" class="radioo">Female</label>
+                    <input type="radio" id="other" value="other" name="gender" />
+                    <label for="other" class="radioo">Other</label>  
+                </div>
+            </div>
+            <div class="form-section">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="form-section">
+                <label for="terms">terms:</label>
+                <input type="checkbox" id="terms" required class="checkbox" /> I agree to terms and conditions  
+            </div>
+            <div class="form-section">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
