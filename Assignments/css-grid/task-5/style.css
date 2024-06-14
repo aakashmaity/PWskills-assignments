@@ -1,0 +1,33 @@
+.item {
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center; /* Aligns all items to the center of their grid areas */
+}
+
+
+
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+.item1 {
+    justify-self: start; /* Aligns the item to the start of its grid area */
+}
+.item2 {
+    justify-self: end; /* Aligns the item to the end of its grid area */
+}
+.item3 {
+    justify-self: center; /* Aligns the item to the center of its grid area */
+}
+.item4 {
+    justify-self: stretch; /* Stretches the item to fill its grid area */
+}
