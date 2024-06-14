@@ -20,7 +20,7 @@ Answer:
     content sizes. 
 
 
-    CSS Grid Layout Model: 
+2. CSS Grid Layout Model: 
     
     1. Two-Dimensional Layout: Grid is designed
     for two-dimensional layouts, allowing us to create rows and columns to position
