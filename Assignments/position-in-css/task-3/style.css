@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+  padding: 10px;
+  background-color: beige;
+  border-radius: 5px;
+  height: 175px;
+  width: 60vw;
+  text-justify: center;
+  border: 1px solid black;
+}
+.card-img {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}

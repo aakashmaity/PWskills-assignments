@@ -1,0 +1,23 @@
+<!-- Explain the difference between Relative and Absolute positioning -->
+
+1-Relative Positioning: 
+
+    When we apply relative positioning to an element, it is positioned relative to its normal position within the document flow. 
+
+    The element is moved from its default position based on properties like top, right, bottom,
+    or left. These properties specify the offset from its original position. 
+
+    The space originally occupied by the element is reserved in the layout, even if we
+    move it. In other words, adjacent elements are not affected by the relative positioning. 
+
+2-Absolute Positioning: 
+
+    When we apply absolute positioning to an element, it is positioned relative to its closest positioned ancestor (or the initial
+    containing block if no positioned ancestor exists). 
+
+    The element is removed from the normal document flow, and its position is determined by properties like top,
+    right, bottom, or left. These properties specify the offset from the closest positioned ancestor. 
+
+    The space originally occupied by the element is no longer
+    reserved in the layout. This means adjacent elements may overlap with the
+    absolutely positioned element.

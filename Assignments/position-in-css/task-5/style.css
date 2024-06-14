@@ -1,0 +1,32 @@
+/* Base styles for the boxes */
+.box {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+/* Positioning and coloring each box */
+.box1 {
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Lower z-index */
+}
+
+.box2 {
+    background-color: blue;
+    top: 40px;
+    left: 40px;
+    z-index: 3; /* Higher z-index */
+}
+
+.box3 {
+    background-color: green;
+    top: 60px;
+    left: 60px;
+    z-index: 2; /* Middle z-index */
+}
