@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Responsive Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <div class="flex h-screen">
+      <aside class="bg-gray-800 text-white w-60 py-4 flex flex-col">
+        <div class="text-2xl font-semibold text-center mb-6">Dashboard</div>
+        <ul class="space-y-4 ml-2 flex-grow">
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-home"></i></span>
+            <a href="#" class="hover:text-yellow-400">Dashboard</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-chart-bar"></i></span>
+            <a href="#" class="hover:text-yellow-400">Analytics</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-users"></i></span>
+            <a href="#" class="hover:text-yellow-400">Team</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-folder"></i></span>
+            <a href="#" class="hover:text-yellow-400">Projects</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-calendar"></i></span>
+            <a href="#" class="hover:text-yellow-400">Calendar</a>
+          </li>
+        </ul>
+        <ul class="space-y-4 ml-2 mt-auto">
+          <p>Your Teams</p>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-users"></i></span>
+            <a href="#" class="hover:text-yellow-400">PW Skills</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-users"></i></span>
+            <a href="#" class="hover:text-yellow-400">PW Labs</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span><i class="fas fa-users"></i></span>
+            <a href="#" class="hover:text-yellow-400">PW 101</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="p-6 flex-1">
+        <nav
+          class="flex justify-between bg-gray-200 p-3 shadow-md shadow-white"
+        >
+          <div class="">
+            <p><i class="fas fa-user mr-2"></i>Profile</p>
+          </div>
+          <div class="flex gap-4">
+            <p><i class="fas fa-search"></i></p>
+            <p><i class="fas fa-bell"></i></p>
+          </div>
+        </nav>
+      </main>
+    </div>
+  </body>
+</html>
