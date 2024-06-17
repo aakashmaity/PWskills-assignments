@@ -1,0 +1,7 @@
+1. Document Object Model (DOM) API: Allows manipulation of the page’s content, structure, and styles.
+2. Fetch API: Provides a more powerful and flexible way to make network requests similar to XMLHttpRequest.
+3. Web Storage API: Includes localStorage and sessionStorage for storing data in the browser.
+4. Geolocation API: Allows access to the user’s geographical location information.
+5. File API: Provides access to read files from the user’s file system.
+6. History API: Allows manipulation of the browser session history, which is used by single-page applications.
+7. WebSockets API: Allows opening a two-way interactive communication session between the user’s browser and a server.

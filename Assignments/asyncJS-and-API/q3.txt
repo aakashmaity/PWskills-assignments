@@ -1,0 +1,12 @@
+The same-origin policy is a security measure implemented by web browsers that restricts how a document or script 
+loaded from one origin can interact with a resource from another origin. It helps prevent malicious scripts on 
+one page from obtaining access to sensitive data on another page through the browser’s Document Object Model (DOM).
+
+
+When making AJAX requests, the same-origin policy prevents you from making requests to a different domain 
+than the one that served the web page.
+To work around this policy, you can use:
+
+CORS (Cross-Origin Resource Sharing): The server can include headers that allow for the resource 
+to be accessed by a different origin. The Access-Control-Allow-Origin header in the response allows 
+for control over which origins are permitted to access the resource.
