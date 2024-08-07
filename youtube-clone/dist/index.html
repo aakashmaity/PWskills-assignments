@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon-yt.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+               
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          
+        }
+        @layer components{
+
+        }
+        @layer base {
+            .dark {
+                background-color: #121212;
+                color: #ffffff;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+      </style>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-
 </head>
-<body class="dark">
-
+<body class="dark" >
     <!-- main section  -->
     <main class="w-[100vw] h-[100vh] bg-primary-light-theme dark:bg-primary-dark-theme dark:text-primary-dark-text text-primary-light-text font-roboto overflow-hidden">
         
@@ -80,7 +105,7 @@
 
 
         <!-- left-menu  -->
-        <section id="leftMenu" class="hidden lg:inline-flex flex-col w-[240px] h-[92vh] px-3 py-3 overflow-auto">
+        <section id="leftMenu" class="hidden lg:inline-flex flex-col w-[240px] h-[92vh] px-3 py-3">
             
             <div class="flex items-center gap-6 px-3 py-2 rounded-lg bg-[#f0f0f0] hover:bg-[#e5e5e5] dark:bg-[#222] dark:hover:bg-[#3d3d3d]">
                 <img src="./assets/home.svg" alt="home" class="dark:invert">

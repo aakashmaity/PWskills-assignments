@@ -72,6 +72,6 @@ deployed link of those three. Expected output - Live hosted URL Link of your dep
 GitHub pages.
 
 Answer :
-        YouTube clone - 
-        Slack home page clone - 
-        Gmail clones - 
+        YouTube clone - https://aakashmaity.github.io/yt-clone-pw
+        Slack home page clone - https://aakashmaity.github.io/slack-clone-pw
+        Gmail clones - https://aakashmaity.github.io/gmail-clone-pw

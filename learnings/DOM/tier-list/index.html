@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-red-500">Your own Tier List</h1>
+    <form>
+        <label for="tier">Tier:</label>
+        <input type="text" id="tier" name="tier" placeholder="Give the tier name ...">
+        
+        <button id="submitBtn" value="Add Tier">Submit</button>
+    </form> 
+    
+    <section class="bg-amber-200">
+        <h2 class="text-red-500">Tier List</h2>
+        <ul id="tierList">
+            <div class="tier-list">
+                <li class="tier-item">Tier 1</li>
+                <li class="tier-item">Tier 2</li>
+                <li class="tier-item">Tier 3</li>
+                <!-- Add more tiers here -->
+            </div>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
